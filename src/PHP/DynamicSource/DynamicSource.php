@@ -1,11 +1,22 @@
 <?php
 
 namespace Bdt\Analytic\DynamicSource;
+use Bdt\Analytic\SiteCategory\CategorySettings;
 
 class DynamicSource
 {
     public static function bdt_get_dynamic_source_data(): array
     {
+
+        if (get_option(CategorySettings::OPTION_SELECTED_CATEGORY) !== CategorySettings::CATEGORY_CASUAL) {
+            return [
+                'enabled' => false,
+                'add_prefix' => false,
+                'ios' => [],
+                'android' => [],
+            ];
+        }
+
         $enabled = get_field('make_dynamic_source') ?: false;
         $addPrefix = get_field('add_prefix_to_utmsource') ?: false;
 

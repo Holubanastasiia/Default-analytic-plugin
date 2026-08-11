@@ -6,6 +6,7 @@ const ENDPOINTS = {
     CASUAL: 'https://r.myflowstats.com/v1/v',
     COMICS: 'https://r.comx-flow.com/v1/v',
     MOB: 'https://r.myflow-analytics.com/v1/v',
+    iGAMING: 'https://ig-core-cdn.com/v1/v',
 };
 
 function getCookieData() {

@@ -2,6 +2,7 @@
 
 namespace Bdt\Analytic\DynamicSource;
 
+use Bdt\Analytic\SiteCategory\CategorySettings;
 class DynamicSourceFieldFilter
 {
     private array $groupsToShowOnlyForCasual = [
@@ -9,8 +10,6 @@ class DynamicSourceFieldFilter
         'group_687e3ffd28446',
     ];
 
-    private const OPTION_NAME = 'selected_category';
-    private const OPTION_ALLOWED_VALUE = 'CASUAL';
 
     public function __construct()
     {
@@ -19,9 +18,9 @@ class DynamicSourceFieldFilter
 
     public function printAdminScript(): void
     {
-        $category = get_option(self::OPTION_NAME);
+        $category = get_option(CategorySettings::OPTION_SELECTED_CATEGORY);
 
-        if ($category === self::OPTION_ALLOWED_VALUE) {
+        if ($category === CategorySettings::CATEGORY_CASUAL) {
             return;
         }
 

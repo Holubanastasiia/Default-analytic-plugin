@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Facebook Analytic
-Description: A fb-analytic code with preloader and choosing main manager with r2 (comics) + redirect.Fixed jquery. Dynamic Source for casual. with one click templates. Fix error section
-Version: 11.0.1
+Description: A fb-analytic code with preloader and choosing main manager with r2 (comics) + redirect.Fixed jquery. Dynamic Source for casual. with one click templates through filters. Fix error section.
+Version: 12.0.0
 Author: Anastasia Holubnycha
 */
 
