@@ -1,0 +1,247 @@
+{
+    "key": "group_684ee71b1c2be",
+    "title": "Dynamic Source",
+    "fields": [
+        {
+            "key": "field_684ee8110fc4c",
+            "label": "Make dynamic source",
+            "name": "make_dynamic_source",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_rest": 0,
+            "edit_in_rest": 0,
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_684ee71b80e64",
+            "label": "IOS",
+            "name": "ios",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_684ee8110fc4c",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_rest": 0,
+            "edit_in_rest": 0,
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_6852741eebfe3",
+                    "label": "Sources",
+                    "name": "sources",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_rest": 0,
+                    "edit_in_rest": 0,
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_684ee73a80e65",
+                            "label": "Source We Have",
+                            "name": "source_we_have",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_rest": 0,
+                            "edit_in_rest": 0,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_6852741eebfe3"
+                        },
+                        {
+                            "key": "field_684ee76680e66",
+                            "label": "Source We Pass On",
+                            "name": "source_we_pass_on",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_rest": 0,
+                            "edit_in_rest": 0,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_6852741eebfe3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_684ee7f080e67",
+            "label": "Android",
+            "name": "android",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_684ee8110fc4c",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_rest": 0,
+            "edit_in_rest": 0,
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_68527456ebfe4",
+                    "label": "Sources",
+                    "name": "sources",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_rest": 0,
+                    "edit_in_rest": 0,
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_684ee7f080e68",
+                            "label": "Source We Have",
+                            "name": "source_we_have",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_rest": 0,
+                            "edit_in_rest": 0,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_68527456ebfe4"
+                        },
+                        {
+                            "key": "field_684ee7f080e69",
+                            "label": "Source We Pass On",
+                            "name": "source_we_pass_on",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_rest": 0,
+                            "edit_in_rest": 0,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_68527456ebfe4"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1750234277
+}

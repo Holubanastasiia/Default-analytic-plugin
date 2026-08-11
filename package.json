@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build": "wp-scripts build src/js/index.js",
+    "start": "wp-scripts start src/js/index.js",
+    "zip": "npm run build && node scripts/make-zip.js"
+  },
+  "dependencies": {
+    "ua-parser-js": "^2.0.10"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^31.5.0",
+    "fs-extra": "^11.3.3"
+  }
+}

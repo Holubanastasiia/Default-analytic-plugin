@@ -1,0 +1,15 @@
+{
+    "name": "bdt/analytic",
+    "autoload": {
+        "psr-4": {
+            "Bdt\\Analytic\\": "src/PHP"
+        }
+    },
+    "authors": [
+        {
+            "name": "anastasiia.holubnycha",
+            "email": "anastasiia.holubnycha@cpamatica.io"
+        }
+    ],
+    "require": {}
+}
