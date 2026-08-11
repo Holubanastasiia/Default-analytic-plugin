@@ -5,7 +5,9 @@ export function handleIntentRedirect(link) {
     const cleanURL = url.hostname + url.pathname + url.search;
 
     if (os.name === 'Android') {
-        window.location.href = `intent://${cleanURL}#Intent;package=com.android.chrome;scheme=https;end`;
+        // window.location.href = `intent://${cleanURL}#Intent;package=com.android.chrome;scheme=https;end`;
+        const fallbackUrl = encodeURIComponent(`https://${cleanURL}`);
+        window.location.href = `intent://${cleanURL}#Intent;package=com.android.chrome;scheme=https;S.browser_fallback_url=${fallbackUrl};end`;
     } else if (os.name === 'iOS') {
         window.location.href = atob('eC1zYWZhcmktaHR0cHM6Ly8=') + cleanURL;
     } else {
