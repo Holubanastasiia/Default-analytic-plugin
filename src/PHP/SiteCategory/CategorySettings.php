@@ -7,7 +7,7 @@ class CategorySettings
     public const CATEGORY_CASUAL = 'CASUAL';
     private string $option_name = 'site_categories';
     private string $selected_option_name = self::OPTION_SELECTED_CATEGORY;
-    private array $categories = ['MOB', self::CATEGORY_CASUAL, 'COMICS', 'IGAMING'];
+    private array $categories = ['MOB', self::CATEGORY_CASUAL, 'COMICS', 'iGAMING'];
 
     public function add_plugin_menu(): void
     {
